@@ -1,0 +1,15 @@
+# 1757. Recyclable and Low Fat Products
+#Link: https://leetcode.com/problems/recyclable-and-low-fat-products/description/?envType=study-plan-v2&id=top-sql-50
+
+# Write your MySQL query statement below
+# create table products(
+#     product_id int,
+#     low_fats enum('Y','N') not null,
+#     recyclable enum('Y','N') not null,
+#     primary key(product_key)
+# );
+
+# insert into products(product_id,low_fats,recyclable) values(0,'Y','N'),
+# (1,'Y','Y'),(2,'N','Y'),(3,'Y','Y'),(4,'N','N');
+
+select product_id from products where low_fats='Y' and recyclable='Y';
